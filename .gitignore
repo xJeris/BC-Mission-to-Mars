@@ -2,3 +2,4 @@
 __pycache__/
 
 # Specific files to ignore
+.ipynb_checkpoints/
