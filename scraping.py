@@ -8,7 +8,7 @@ import time
 
 def scrape_all():
     # Initiate headless driver for deployment
-    executable_path = {'executable_path': 'C:/windows/chromedriver.exe'}
+    executable_path = {'executable_path': ChromeDriverManager().install()}
     browser = Browser('chrome', **executable_path, headless=False)
 
     news_title, news_paragraph = mars_news(browser)
